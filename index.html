@@ -1,136 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>コミュニティー宣伝</title>
-    <style>
-      h1 {
-        font-family: Meiryo, sans-serif;
-      }
-    </style>
-    <style>
-      body {
-        background-color: rgb(49, 51, 56);
-      }
-    </style>  
-    <style>
-      main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .card {
-        width: 300px;
-        height: 400px;
-        margin: 20px;
-        position: relative;
-        overflow: hidden;
-      }
-      .card img {
-        width: 40%;
-        height: 40%;
-        object-fit: contain;
-      }
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        color: #fff;
-      }
-      .card:hover .overlay {
-        opacity: 1;
-      }
-      .text {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-top: 1rem;
-      }
-      .link {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 style="text-align: center;"><font color="white">Warden Warsイベント</font></h1>
-    <div style="text-align: center;">
-    <main>
-      <div class="card">
-        <a href="https://example.com/community2" target="_blank">
-          <div style="text-align: center;">
-            <img src="1com.png" alt="your image" style="margin-top: 50%;">
-            <div style="margin-top: 80px;"><font color="white" size="5">たまご鯖</font></div>
-          <div class="overlay">
-          </div>
-          </div>
-          <div class="link"></div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://example.com/community2" target="_blank">
-          <div style="text-align: center;">
-            <img src="com.png" alt="your image" style="margin-top: 50%;">
-            <div style="margin-top: 80px;"><font color="white" size="5">ぼすを鯖</font></div>
-          <div class="overlay">
-          </div>
-          </div>
-          <div class="link"></div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://example.com/community2" target="_blank">
-          <div style="text-align: center;">
-            <img src="om.png" alt="your image" style="margin-top: 50%;">
-            <div style="margin-top: 80px;"><font color="white" size="5">Minecraft/マイクラ</font></div>
-          <div class="overlay">
-          </div>
-          </div>
-          <div class="link"></div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://example.com/community2" target="_blank">
-          <div style="text-align: center;">
-            <img src="m.png" alt="your image" style="margin-top: 50%;">
-            <div style="margin-top: 80px;"><font color="white" size="5">マインクラフト会</font></div>
-          <div class="overlay">
-          </div>
-          </div>
-          <div class="link"></div>
-        </a>
-    </div>
-    <div class="card">
-      <a href="https://example.com/community2" target="_blank">
-        <div style="text-align: center;">
-          <img src="oh.png" alt="your image" style="margin-top: 50%;">
-          <div style="margin-top: 80px;"><font color="white" size="5">Minecraftの会</font></div>
-        <div class="overlay">
-        </div>
-        </div>
-        <div class="link"></div>
-      </a>
-  </div>
-</main>
-</div>
-<div style="text-align: center; margin-top: 300px;">
-  <a href="rule/" style="text-decoration: underline; color: white;"><font size="5" color="white">ルール</font></a>
-</div>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Warden Wars</title>
+    <meta name="description" content="色々なMinecraft関連コミュニティで合同イベントをやる企画">
+    <link rel="canonical" href="https://wardenwars.github.io/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="title">
+                <h1>Warden Wars</h1>
+            </div>
+        </header>
+        <main>
+            <div class="tile">
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/tamago-saba.png" alt="たまご鯖">
+                        <div class="card-name">
+                            <p>たまご鯖</p>
+                        </div>
+                        <div class="overlay"></div>
+                        <a class="card-link" href="https://www.tamago-saba.com" target="_blank"></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/bosuwo-saba.png" alt="ぼすを鯖">
+                        <div class="card-name">
+                            <p>ぼすを鯖</p>
+                        </div>
+                        <div class="overlay"></div>
+                        <a class="card-link" href="https://www.mcnimoses.net" target="_blank"></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/minecraft-maikura.png" alt="Minecraft/マイクラ">
+                        <div class="card-name">
+                            <p>Minecraft/マイクラ</p>
+                        </div>
+                        <div class="overlay"></div>
+                        <a class="card-link"
+                            href="https://line.me/ti/g2/CJW2WW2DHXDSdOmx6ecle5YqvH-nFljGru4J6g?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+                            target="_blank"></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/minecraft-kai.png" alt="マインクラフト会">
+                        <div class="card-name">
+                            <p>マインクラフト会</p>
+                        </div>
+                        <div class="overlay"></div>
+                        <a class="card-link"
+                            href="https://line.me/ti/g2/AAg8421eSe5GalqpCDyrJK5GM1uTavk1IulUfg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+                            target="_blank"></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/minecraft-no-kai.png" alt="Minecraftの会">
+                        <div class="card-name">
+                            <p>Minecraftの会</p>
+                        </div>
+                        <div class="overlay"></div>
+                        <a href="" target="_blank"></a>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>色々なMinecraft関連コミュニティで合同イベントをやる企画</p>
+                </div>
+                <div class="info">
+                    <p>日時: 未定</p>
+                    <p>サーバーアドレス: 未定</p>
+                    <p>※各イベント参加コミュニティに新規参加するときは、そのコミュニティのルールをよく読んで遵守するようにしましょう。</p>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <a href="https://sites.google.com/view/mc-warden-wars-rule/" target="_blank">ゲームのルール</a>
+                    </div>
+                    <div class="link">
+                        <a href="https://discord.gg/7Q6hN8gZ9x" target="_blank">Discordサーバー (VC用)</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="shusai">
+                <p>主催: e2318501 im_404_not_found lrekina0115 Manhattantoro Shin_Minecraft</p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
