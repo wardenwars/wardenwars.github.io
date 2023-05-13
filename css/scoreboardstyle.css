@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+a {
+    color: lightgray;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(49, 51, 56);
+    font-family: Meiryo, sans-serif;
+}
+
+table {
+    color: #000000;
+}
+
+.widthNo {
+    width: 50px;
+}
+
+.widthName {
+    width: 200px;
+}
+
+.widthVal {
+    width: 100px;
+}
+
+.wapper {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title {
+    color: lightgray;
+}
+
+.tile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.card:hover .overlay {
+    opacity: 0.5;
+}
+
+.desc {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: lightgray;
+    font-size: 17px;
+}
+
+.info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: lightgray;
+}
+
+.links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.shusai {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
