@@ -117,6 +117,10 @@ body {
     color: lightgray;
 }
 
+.info p {
+    text-indent: 1rem;
+}
+
 .links {
     padding-top: 50px;
     padding-bottom: 50px;
